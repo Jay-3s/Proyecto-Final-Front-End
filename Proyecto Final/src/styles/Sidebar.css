@@ -1,0 +1,14 @@
+.sidebar {
+    width: 20%;
+    padding: 20px;
+    background:white;
+  }
+  
+  .filtro {
+    display: inline-block;
+    background: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+  }
+  

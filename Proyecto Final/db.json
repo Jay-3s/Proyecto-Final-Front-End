@@ -2,8 +2,22 @@
   "users": [
     {
       "id": "200d",
-      "nombre": "jos",
-      "password": "1234"
+      "nombre": "Jostin Espinoza",
+      "password": "1234",
+      "Rol": "Admin"
+    },
+    {
+      "id": "20c4",
+      "nombre": "Marieza Torres",
+      "password": "2222",
+      "Rol": "User"
+    },
+    {
+      "id": "7ed0",
+      "nombre": "Susana",
+      "password": "2025",
+      "Rol": "User"
     }
+ 
   ]
 }

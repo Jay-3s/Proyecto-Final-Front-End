@@ -1,0 +1,12 @@
+
+.product-card {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    width: 200px;
+  }
+  .product-card img {
+    width: 100%;
+  }
+  

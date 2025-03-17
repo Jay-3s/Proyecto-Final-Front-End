@@ -9,6 +9,7 @@ function FormLogin() {
   const [nombreUsuario,SetNombreUsuario]=useState()
   const [passwordUsuario,SetPasswordUsuario]=useState()
   const [usuarios,SetUsuarios]=useState()
+  const [RolUsuario,SetRolUsuario]=useState()
 
 
   const navigate = useNavigate()
@@ -45,23 +46,32 @@ function FormLogin() {
     
   }
 
+  function Rol(evento) {
+
+    SetRolUsuario(evento.target.value)
+    
+  }
+
   function validar() {
 
+   const encontrado = usuarios.find(usuario => usuario.nombre === nombreUsuario && usuario.password === passwordUsuario);
 
-    const encontrado = usuarios.filter(usuario => usuario.nombre===nombreUsuario && usuario.password=== passwordUsuario)
-     
+   if (!encontrado) {
   
-    if (encontrado.length === 0) {
-        console.log("Usuario o contrasena incorrectos");
-      
-    }else{
-  
+  console.log("Usuario o contraseña incorrectos");
 
-      navigate('/Principal')
-      
-    }
+  } else {
+  
+  if (encontrado.Rol === 'Admin') {
+  
+    navigate('/Admin');  
+  } else {
     
-    
+    navigate('/Principal'); 
+
+  }
+}
+ 
    
   }
 

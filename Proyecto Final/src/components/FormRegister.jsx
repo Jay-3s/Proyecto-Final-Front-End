@@ -6,6 +6,7 @@ function FormRegister() {
 
       const [nombreUsuario,SetNombreUsuario]=useState()
       const [passwordUsuario,SetPasswordUsuario]=useState()
+      
 
     function nombre(evento) {
     
@@ -20,11 +21,10 @@ function FormRegister() {
         SetPasswordUsuario(evento.target.value)
         
     }
-    
-      
+  
     function Registrar() {
     
-        llamados.PostUsers(nombreUsuario,passwordUsuario)
+        llamados.PostUsers(nombreUsuario,passwordUsuario,"User")
     
     }
 

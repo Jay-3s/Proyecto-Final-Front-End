@@ -1,0 +1,27 @@
+.UnNav{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background: #ff8c00;
+    width: 100%;
+    height: 60px;
+}
+
+.Links{
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.btns{
+    margin-left: 10px;
+}
+
+.logo{
+    width: 100%;
+}
+
+.Logo{
+    width: 100px;
+    height: 100px;
+}

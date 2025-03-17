@@ -18,9 +18,9 @@ async function GetUsers() {
     }
 }
 
-async function PostUsers(nombre,password) {
+async function PostUsers(nombre,password,Rol) {
     try {
-        const userData = { nombre, password};
+        const userData = { nombre, password,Rol};
 
         const response = await fetch("http://localhost:3000/users", {
             method: 'POST',

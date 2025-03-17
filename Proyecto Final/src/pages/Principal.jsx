@@ -1,9 +1,18 @@
 import React from 'react'
+import Navbar2 from '../components/Navbar2'
+import Sidebar from '../components/Sidebar'
+import ProductCard from '../components/ProductCard'
+import ProductList from '../components/ProductList'
+import Footer from '../components/Footer'
 
 function Principal() {
   return (
     <div>
-        <h1>Esta es la página principal</h1>
+        <Navbar2 />
+        <Sidebar />
+        <ProductCard />
+        <ProductList />
+        <Footer />
     </div>
   )
 }
