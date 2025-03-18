@@ -11,11 +11,11 @@ function Navbar2() {
             <img src={logo} alt="logogo" className='logo'/>
         </div>
         <div className='Links'>
-            <a href="">1</a>
-            <a href="">2</a>
-            <a href="">3</a>
-            <a href="">4</a>
-            <a href="">5</a>
+            <a href="/Acerca De">Acerca De Nosotros</a>
+            <a href="">Ayuda</a>
+            <a href="">Donativos</a>
+            <a href="">Más Sobre La Marca</a>
+            <a href="">Desarrolladores</a>
         </div>
         <div className='btns'>
             <button className='s'>Iniciar Sesión</button>

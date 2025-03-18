@@ -7,6 +7,7 @@ import Register from '../pages/Register';
 import Principal from '../pages/Principal';
 import Main from '../pages/Main';
 import Admin from '../pages/Admin';
+import AcercaDe from '../pages/AcercaDe';
 
 
 function Routing() {
@@ -24,6 +25,7 @@ function Routing() {
                            <Route path="/Principal" element={<Principal/>}/>
                            <Route path="/" element={<Main/>}/>
                            <Route path='/Admin' element={<Admin/>}></Route>
+                           <Route path='/Acerca De' element={<AcercaDe/>}></Route>
           
 
                       

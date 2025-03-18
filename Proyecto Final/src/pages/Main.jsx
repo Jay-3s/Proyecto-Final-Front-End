@@ -6,8 +6,8 @@ import '../styles/Main.css'
 function Main() {
   return (
     <div>
-        <h1>Bienvenidos</h1>
         <Navbar />
+        <h1>Bienvenidos</h1>
         <Card />
     </div>
   )

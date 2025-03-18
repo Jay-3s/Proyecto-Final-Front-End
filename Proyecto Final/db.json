@@ -17,7 +17,12 @@
       "nombre": "Susana",
       "password": "2025",
       "Rol": "User"
+    },
+    {
+      "id": "6cfe",
+      "nombre": "jacky",
+      "password": "89",
+      "Rol": "User"
     }
- 
   ]
 }

@@ -58,7 +58,7 @@ function FormLogin() {
 
    if (!encontrado) {
   
-  console.log("Usuario o contraseña incorrectos");
+   console.log("Usuario o contraseña incorrectos");
 
   } else {
   
