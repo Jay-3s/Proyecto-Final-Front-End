@@ -1,12 +1,33 @@
 
-.product-card {
-    background: white;
-    padding: 15px;
-    border-radius: 5px;
-    text-align: center;
-    width: 200px;
-  }
-  .product-card img {
-    width: 100%;
-  }
-  
+/* .ContCard {
+  background-color: blue;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 20px;
+} */
+
+.ContCard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  gap: 2%;
+  margin: 2%;
+}
+
+.itemCard {
+  background-color: white;
+  text-align: center;
+  border-radius: 10px;
+  /* height: 250px; */
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.582);
+  padding: 6%;
+}
+
+.itemCard img{
+  /* margin: 5px; */
+  width: 150px;
+  height: 150px;
+}
+

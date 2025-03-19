@@ -4,14 +4,18 @@ import Sidebar from '../components/Sidebar'
 import ProductCard from '../components/ProductCard'
 import ProductList from '../components/ProductList'
 import Footer from '../components/Footer'
+import "../styles/Principal.css"
 
 function Principal() {
-  return (
+  return (  
     <div>
         <Navbar2 />
-        <Sidebar />
-        <ProductCard />
-        <ProductList />
+        <main className='main'>
+          <Sidebar />
+          <ProductCard />
+        </main>
+
+        {/* <ProductList /> */}
         <Footer />
     </div>
   )

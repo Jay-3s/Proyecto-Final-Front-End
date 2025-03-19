@@ -1,15 +1,110 @@
-import React from "react";
-import "../styles/ProductCard.css";
-import panda2 from "../img/panda2.jpg"
+import React from 'react'
+import '../styles/ProductCard.css'
+import panda2 from'../img/panda2.jpg'
 
-const ProductCard = ({ image, name, price }) => {
+function ProductCard() {
   return (
-    <div className="product-card">
-      <img src={panda2} alt={name} />
-      <p>{name}</p>
-      <span>${price}</span>
-    </div>
-  );
-};
+    <div className="ContCard">
+      
+      <div className='itemCard'>
+      <img src={panda2} alt="1" />
+        <div>Producto</div>
+        <div>Precio: $</div>
+        <div>Color:</div>
+      </div>
 
-export default ProductCard;
+      <div className='itemCard'>
+        <h1>Card</h1>
+        <h3>Producto</h3>
+        <p>Precio: $</p>
+        <p>Color:</p>
+      </div>
+
+      <div className='itemCard'>
+        <h1>Card</h1>
+        <h3>Producto</h3>
+        <p>Precio: $</p>
+        <p>Color:</p>
+      </div>
+
+      <div className='itemCard'>
+        <h1>Card</h1>
+        <h3>Producto</h3>
+        <p>Precio: $</p>
+        <p>Color:</p>
+      </div>
+
+      <div className='itemCard'>
+        <h1>Card</h1>
+        <h3>Producto</h3>
+        <p>Precio: $</p>
+        <p>Color:</p>
+      </div>
+
+      <div className='itemCard'>
+        <h1>Card</h1>
+        <h3>Producto</h3>
+        <p>Precio: $</p>
+        <p>Color:</p>
+      </div>
+
+      <div className='itemCard'>
+        <h1>Card</h1>
+        <h3>Producto</h3>
+        <p>Precio: $</p>
+        <p>Color:</p>
+      </div>
+
+      <div className='itemCard'>
+        <h1>Card</h1>
+        <h3>Producto</h3>
+        <p>Precio: $</p>
+        <p>Color:</p>
+      </div>
+
+      <div className='itemCard'>
+        <h1>Card</h1>
+        <h3>Producto</h3>
+        <p>Precio: $</p>
+        <p>Color:</p>
+      </div>
+
+      <div className='itemCard'>
+        <h1>Card</h1>
+        <h3>Producto</h3>
+        <p>Precio: $</p>
+        <p>Color:</p>
+      </div>
+
+      <div className='itemCard'>
+        <h1>Card</h1>
+        <h3>Producto</h3>
+        <p>Precio: $</p>
+        <p>Color:</p>
+      </div>
+
+      <div className='itemCard'>
+        <h1>Card</h1>
+        <h3>Producto</h3>
+        <p>Precio: $</p>
+        <p>Color:</p>
+      </div>
+
+      <div className='itemCard'>
+        <h1>Card</h1>
+        <h3>Producto</h3>
+        <p>Precio: $</p>
+        <p>Color:</p>
+      </div>
+
+      <div className='itemCard'>
+        <h1>Card</h1>
+        <h3>Producto</h3>
+        <p>Precio: $</p>
+        <p>Color:</p>
+      </div>
+    </div>
+  )
+}
+
+export default ProductCard

@@ -31,8 +31,8 @@ Estamos comprometidos con Costa Rica y con una producción ética que respalde e
 Luce con orgullo una camiseta que representa tus valores. Sostenibilidad, calidad y solidaridad se unen en cada prenda de KOMPA SHOP.
 
 Compra con propósito. Visítanos y haz la diferencia.
-    </p>
-    <Footer />
+      </p>
+       <Footer />
     </div>
 
   )
