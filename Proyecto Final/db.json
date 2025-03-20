@@ -25,5 +25,54 @@
       "Rol": "User"
     }
   ],
-  "products": []
+  "products": [
+    {
+      "id": "01a2",
+      "nombre": "bdwdcwbhj",
+      "precio": "hccbihoiuor",
+      "stock": "9erierjjoe"
+    },
+    {
+      "id": "6577",
+      "nombre": "vi7bf7y",
+      "precio": "gbguin",
+      "stock": "bgig7ngi"
+    },
+    {
+      "id": "126a",
+      "nombre": "nog",
+      "precio": "bjgg7gin",
+      "stock": "ngfyvyv"
+    },
+    {
+      "id": "4af0",
+      "nombre": "yiqyrlw",
+      "precio": " lehwflh ",
+      "stock": "nheoclrhlihrl"
+    },
+    {
+      "id": "59fb",
+      "nombre": "h k3lhfvo3rl",
+      "precio": "njfñchoheo",
+      "stock": "joñcohfo"
+    },
+    {
+      "id": "fd8c",
+      "nombre": "kl nchfo",
+      "precio": "fjeh bh",
+      "stock": "iubfcibgfbi"
+    },
+    {
+      "id": "87aa",
+      "nombre": "ec hrghrv ",
+      "precio": "byichifhbi",
+      "stock": "fhiclfi"
+    },
+    {
+      "id": "4aff",
+      "nombre": "fc kth3hf3v",
+      "precio": "klnfcheofhl",
+      "stock": "hncfewhfhe"
+    }
+  ]
 }

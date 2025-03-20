@@ -1,6 +1,8 @@
 import React from 'react'
 import Footer from '../components/Footer'
 import Navbar2 from '../components/Navbar2'
+import AgregarProducto from '../components/AgregarProducto'
+import ProductosAgregadosAdmin from '../components/ProductosAgregadosAdmin'
 
 function Admin() {
   return (
@@ -8,38 +10,8 @@ function Admin() {
         <Navbar2/>
         <h1>Esta es la página de Administración</h1>
         <div>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+          <AgregarProducto />
+          <ProductosAgregadosAdmin />
         </div>
         <Footer />
     </div>

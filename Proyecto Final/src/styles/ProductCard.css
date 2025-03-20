@@ -9,17 +9,13 @@
 } */
 
 .ContCard {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  width: 100%;
-  gap: 2%;
-  margin: 2%;
+  display: flex;
 }
 
 .itemCard {
   background-color: white;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 10px;  
   /* height: 250px; */
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.582);
   padding: 6%;
@@ -29,5 +25,17 @@
   /* margin: 5px; */
   width: 150px;
   height: 150px;
+}
+
+.container{ 
+  /* position: relative;
+  left: 250px; */
+  background-color: red;
+  width: 1145px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+
+  gap: 50px;
+  list-style: none;
 }
 
