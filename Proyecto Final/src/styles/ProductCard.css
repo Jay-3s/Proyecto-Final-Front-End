@@ -28,13 +28,11 @@
 }
 
 .container{ 
-  /* position: relative;
-  left: 250px; */
-  background-color: red;
-  width: 1145px;
+  position: relative;
+  left: 150px; 
+  width: 345px;
   display: grid;
   grid-template-columns: repeat(4,1fr);
-
   gap: 50px;
   list-style: none;
 }

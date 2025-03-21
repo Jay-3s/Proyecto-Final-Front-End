@@ -20,7 +20,12 @@ async function GetProducts() {
 
 async function PostProducts(nombre,precio,stock,imgRef) {
     try {
-        const userData = { nombre,precio,stock,imgRef};
+        const userData = { 
+            "nombre": nombre,
+            "precio": precio,
+            "stock": stock,
+            "imgRef": imgRef
+        };
 
         const response = await fetch("http://localhost:3000/products", {
             method: 'POST',

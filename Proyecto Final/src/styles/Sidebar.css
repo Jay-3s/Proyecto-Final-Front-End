@@ -1,9 +1,9 @@
 .sidebar {
-    width: 10%;
+    width: 20%;
     padding: 20px;
     background:white;
-    border: solid;
     height: auto;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.582);
 
   }
   

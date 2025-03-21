@@ -31,10 +31,10 @@ function ProductosAgregadosClient() {
             <div className="ContCard">
              
              <div className='itemCard'>
-             <img src={panda2} alt="1" />
-               <div> <p>{product.nombre}</p></div>
-               <div><p>{product.precio}</p></div>
-               <div><p>{product.stock}</p></div>
+               <img src={product.imgRef} alt="1" />
+               <div> <p>Nombre:{product.nombre}</p></div>
+               <div><p>Precio:¢{product.precio}</p></div>
+               <div><p>Disponibles:{product.stock}</p></div>
              </div>
        
             

@@ -49,6 +49,7 @@ function ProductosAgregadosAdmin() {
             <li key={index}>
               <input type="checkbox" />
               <p>{product.nombre}</p>
+              <img src={product.imgRef} />
               <input type="text"  placeholder='Editar Una Tarea' onChange={DatoEditado} />
               <button onClick={e=>editar(product.id)} >Editar</button>
               <button onClick={e=>eliminar(product.id)} >Eliminar</button>
