@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import llamados from '../services/llamados'
+import '../styles/FormRegister.css'
 
 function FormRegister() {
 
@@ -31,16 +32,19 @@ function FormRegister() {
 
 
   return (
-    <div>
+    <div className='elva'>
+
+    <div className='register'>
+        <h1>Registrarse</h1><br /><br />
         <label >Nombre</label>
         <input value={nombreUsuario} onChange={nombre}  type="text" />
-        <br />
+        <br /><br />
         <label >Password</label>
-        <input value={passwordUsuario} onChange={password} type="text" />
+        <input value={passwordUsuario} onChange={password} type="text" /><br />
         <p>¿Ya Tienes Una Cuenta?<Link to="/Login">Accede Aquí</Link></p><br />
-        <button onClick={Registrar}>Registrarse</button>
-        
+        <button onClick={Registrar} className='registrar'>Registrarse</button>
 
+    </div>
     </div>
   )
 }

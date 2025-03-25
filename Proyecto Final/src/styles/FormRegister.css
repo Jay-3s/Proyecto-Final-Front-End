@@ -1,0 +1,30 @@
+.register{
+    margin: auto;
+    border: solid;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+.elva{
+    background: #ff8c00;
+    padding: 10%;
+  
+}
+
+button{
+    height: 25px;
+}
+
+.registrar{
+    background: #ff8c00;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+}

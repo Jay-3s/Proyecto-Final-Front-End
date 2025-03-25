@@ -21,10 +21,10 @@ async function GetProducts() {
 async function PostProducts(nombre,precio,stock,imgRef) {
     try {
         const userData = { 
-            "nombre": nombre,
-            "precio": precio,
-            "stock": stock,
-            "imgRef": imgRef
+            nombre,
+            precio,
+            stock,
+            imgRef
         };
 
         const response = await fetch("http://localhost:3000/products", {
@@ -46,9 +46,15 @@ async function PostProducts(nombre,precio,stock,imgRef) {
     }
 }
 
-async function UpdateProducts(nombre,precio,id) {
+async function UpdateProducts(nombre,precio,stock,imgRef,id) {
     try {
-        const userData = {nombre,precio,id };
+        const userData = { 
+            nombre,
+            precio,
+            stock,
+            imgRef
+            
+        };
 
         const response = await fetch(`http://localhost:3000/products/${id}`, {
             method: 'PUT',

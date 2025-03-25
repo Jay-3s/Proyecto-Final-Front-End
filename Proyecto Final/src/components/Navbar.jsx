@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/Navbar.css'
 
 
 const Navbar = () => {
@@ -10,8 +11,10 @@ const Navbar = () => {
         <li className="navbar-item"><a href="/services">Servicios</a></li>
         <li className="navbar-item"><a href="/contact">Contactos</a></li>
       </ul>
+
       <div>
-        <div>
+
+        <div className='bt'>
             <button className='1'>Iniciar Sesión</button>
             <button className='2'>Registrarse</button>
         </div>

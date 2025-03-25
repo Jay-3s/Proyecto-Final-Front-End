@@ -1,8 +1,7 @@
 import React, { useState,useEffect } from 'react'
-
 import { Link, useNavigate } from "react-router-dom";
-
 import llamados from '../services/llamados';
+import '../styles/FormLogin.css'
 
 function FormLogin() {
 
@@ -76,14 +75,17 @@ function FormLogin() {
   }
 
   return (
-    <div>
+    <div className='fiv'>
 
+    <div className='login'>
+       <h1>Iniciar Sesión</h1><br /><br />
       <label htmlFor="">Nombre</label>
-      <input value={nombreUsuario} onChange={nombre} type="text" />
+      <input value={nombreUsuario} onChange={nombre} type="text" /><br /><br />
       <label htmlFor="">Contraseña</label>
-      <input value={passwordUsuario} onChange={password} type="text" />
-      <p>¿No tienes cuenta? <Link to="/Register">Regístrate aquí</Link></p>
-      <button onClick={validar}>Iniciar</button>
+      <input value={passwordUsuario} onChange={password} type="text" /><br />
+      <p>¿No tienes cuenta? <Link to="/Register">Regístrate aquí</Link></p><br />
+      <button onClick={validar} className='iniciar'>Iniciar</button>
+    </div>
     </div>
   )
 }

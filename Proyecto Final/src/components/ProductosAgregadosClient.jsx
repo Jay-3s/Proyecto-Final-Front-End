@@ -1,7 +1,7 @@
 import React, { useState,useEffect } from 'react'
 import llamadosProducts from '../services/llamadosProducts';
 import '../styles/ProductCard.css'
-import panda2 from'../img/panda2.jpg'
+
 
 
 function ProductosAgregadosClient() {

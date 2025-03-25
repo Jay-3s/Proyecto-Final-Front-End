@@ -5,7 +5,7 @@ import logo from "../img/logo.png"
 
 function Navbar2() {
   return (
-    <div>
+    <div className='UwU'>
        <nav className='UnNav'>
         <div className='Logo'>
             <img src={logo} alt="logogo" className='logo'/>

@@ -8,6 +8,7 @@ import Principal from '../pages/Principal';
 import Main from '../pages/Main';
 import Admin from '../pages/Admin';
 import AcercaDe from '../pages/AcercaDe';
+import Pagos from '../pages/SoloPagos'
 
 
 function Routing() {
@@ -26,6 +27,7 @@ function Routing() {
                            <Route path="/" element={<Main/>}/>
                            <Route path='/Admin' element={<Admin/>}></Route>
                            <Route path='/Acerca De' element={<AcercaDe/>}></Route>
+                           <Route path='/Pagar' element={<Pagos/>}></Route>
           
 
                       

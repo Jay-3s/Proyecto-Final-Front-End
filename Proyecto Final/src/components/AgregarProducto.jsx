@@ -49,6 +49,7 @@ function AgregarProducto() {
 
         console.log(ImageProducto);
         
+        
           llamadosProducts.PostProducts(ProductoCreado,PrecioProducto,StockProducto,ImageProducto)
      
       }
@@ -57,7 +58,7 @@ function AgregarProducto() {
     
     <div className='cajota'>
         <div className='div'>
-          <h1>Agregar Producto</h1>
+          <h1 className='KunKun'>Agregar Producto</h1>
           <label>Agregar Nombre Del Producto...</label><br />
           <input type="text"value={ProductoCreado} onChange={Producto}  placeholder='Agrega Un Nombre...'/><br /><br />
           <label>Agregar Precio...</label><br />

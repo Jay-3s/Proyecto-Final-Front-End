@@ -1,0 +1,27 @@
+.info{
+    
+    height: 80%;
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    background-color: rgb(201, 198, 198);
+    border-radius: 20px;
+    padding: 50px;
+    border: solid white;
+}
+
+img{
+    width: 50%;
+    height: 50%;
+    display: flex; 
+}
+
+.cajon{
+    display: flex;
+    margin: auto;
+}
+
+h1{
+    background: #ff8c00;
+    padding: 10px;
+}

@@ -1,14 +1,18 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
 import Card from '../components/Card'
 import '../styles/Main.css'
+import ProductosAgregadosClient from '../components/ProductosAgregadosClient'
+import Navbar2 from '../components/Navbar2'
+import Footer from '../components/Footer'
 
 function Main() {
   return (
     <div>
-        <Navbar />
-        <h1>Bienvenidos</h1>
+        <Navbar2 />
+        <h1>Bienvenidos A KOMPA SHOP Costa Rica</h1>
+        <ProductosAgregadosClient />
         <Card />
+        <Footer />
     </div>
   )
 }
