@@ -19,7 +19,13 @@
   /* height: 250px; */
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.582);
   padding: 6%;
+  
 }
+
+.itemCard:hover {
+  transform: scale(1.02);
+}
+
 
 .itemCard img{
   /* margin: 5px; */
@@ -37,3 +43,19 @@
   list-style: none;
 }
 
+.btnCarrito {
+  text-align: right;
+}
+
+.btnCarrito button {
+  background-color: #ff8c00;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+.btnCarrito button:hover {
+  background-color: #bb6904;
+  transform: scale(1.3);
+}

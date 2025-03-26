@@ -9,6 +9,7 @@ import Main from '../pages/Main';
 import Admin from '../pages/Admin';
 import AcercaDe from '../pages/AcercaDe';
 import Pagos from '../pages/SoloPagos'
+import MiCarrito from '../pages/MiCarrito';
 
 
 function Routing() {
@@ -28,7 +29,9 @@ function Routing() {
                            <Route path='/Admin' element={<Admin/>}></Route>
                            <Route path='/Acerca De' element={<AcercaDe/>}></Route>
                            <Route path='/Pagar' element={<Pagos/>}></Route>
-          
+
+                           <Route path='/Carrito' element={<MiCarrito/>}></Route>
+
 
                       
                             
