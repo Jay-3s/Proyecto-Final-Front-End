@@ -20,6 +20,8 @@
 
 .btns{
     margin-left: 10px;
+    display: flex;
+
 }
 
 .logo{
@@ -42,4 +44,39 @@
     display: flex;
     flex-direction: row;
 }
+
+.s{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+    background: #cc750a;
+
+}
+
+.r{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+    background: #cc750a;
+}
+
+.Link{
+    text-decoration: none;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+
 

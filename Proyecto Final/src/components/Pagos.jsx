@@ -10,7 +10,7 @@ const Pagos = () => {
   const [name, setName] = useState('');
   const [address, setAddress] = useState('');
 
-  const handleSubmit = (e) => {
+  const subir = (e) => {
     e.preventDefault();
     Swal.fire({
       icon: "success",
@@ -25,7 +25,7 @@ const Pagos = () => {
     <div className="pasarela">
       <h2>Realiza Tu Pago Aquí</h2>
       
-      <form onSubmit={handleSubmit} className="payment-form">
+      <form onSubmit={subir} className="payment-form">
         <div className="payment-methods">
           <h3>Selecciona un método de pago</h3>
           <label>
@@ -41,6 +41,27 @@ const Pagos = () => {
             Tarjeta de Crédito
           </label>
         </div>
+
+        <h3>Selecciona una causa bénefica de tu preferencia</h3>
+
+        <label>
+        <input type="radio" name="payment" value="Google Pay"  />
+           Fundación Paniamor
+          </label>
+          <label>
+        <input type="radio" name="payment" value="Google Pay"  />
+          ALCCI
+          </label>
+          <label>
+        <input type="radio" name="payment" value="Google Pay"  />
+        Teletón Costa Rica
+          </label>
+          <label>
+        <input type="radio" name="payment" value="Google Pay"  />
+        Creciendo Juntos
+          </label>
+          
+          
 
         <div className="personal-info">
           <h3>Detalles del pago</h3>

@@ -1,4 +1,6 @@
 
 .main {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 80%;
+    width: 100%;
 }

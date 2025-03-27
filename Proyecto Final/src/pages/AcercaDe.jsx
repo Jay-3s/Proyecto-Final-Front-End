@@ -2,10 +2,12 @@ import React from 'react'
 import Footer from '../components/Footer'
 import '../styles/AcercaDe.css'
 import PandaAcercaDe from '../img/PandaAcercaDe.png'
+import Navbar2 from '../components/Navbar2'
 
 function AcercaDe() {
   return (
     <div>
+      <Navbar2 />
       <h1>Acerca De Nosostros</h1>
          <div className='cajon'>
 

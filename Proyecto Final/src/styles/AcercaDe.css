@@ -4,7 +4,7 @@
     width: 50%;
     display: flex;
     justify-content: end;
-    background-color: rgb(201, 198, 198);
+    background-color: #cc750a;
     border-radius: 20px;
     padding: 50px;
     border: solid white;
@@ -19,9 +19,19 @@ img{
 .cajon{
     display: flex;
     margin: auto;
+    
 }
 
 h1{
     background: #ff8c00;
     padding: 10px;
+}
+
+.p{
+   
+    text-align: left;
+}
+
+.Joz{
+    border-radius: 320px;
 }

@@ -9,7 +9,7 @@ function Main() {
   return (
     <div>
         <Navbar2 />
-        <h1>Bienvenidos A KOMPA SHOP Costa Rica</h1>
+        <h1 className='es'>Te Damos La Bienvenida A KOMPA SHOP Costa Rica</h1>
         <ProductosAgregadosClient />
         <Card />
         <Footer />
