@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
 import '../styles/Pagos.css';
 import Swal from 'sweetalert2';
+import 'boxicons'
+
 
 const Pagos = () => {
-  const [paymentMethod, setPaymentMethod] = useState('');
-  const [cardNumber, setCardNumber] = useState('');
-  const [expirationDate, setExpirationDate] = useState('');
-  const [cvv, setCvv] = useState('');
-  const [name, setName] = useState('');
-  const [address, setAddress] = useState('');
+
+  const [editandoId,setEditandoId] = useState(null)
 
   const subir = (e) => {
     e.preventDefault();
@@ -21,80 +19,110 @@ const Pagos = () => {
     
   };
 
+  function mostrando() {
+    setEditandoId()
+    
+  }
+
   return (
     <div className="pasarela">
       <h2>Realiza Tu Pago Aquí</h2>
       
-      <form onSubmit={subir} className="payment-form">
+      <div  className="payment-form">
         <div className="payment-methods">
           <h3>Selecciona un método de pago</h3>
+
+          <div className="label2">
+          <box-icon type='logo' name='google'></box-icon>
           <label>
-            <input type="radio" name="payment" value="Google Pay" onChange={(e) => setPaymentMethod(e.target.value)} />
-            Google Pay
+            Google Pay 
           </label>
+            <input type="radio"/>
+          </div>
+
+          <div className="label2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-apple" viewBox="0 0 16 16">
+          <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/>
+          <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/>
+          </svg>
           <label>
-            <input type="radio" name="payment" value="Apple Pay" onChange={(e) => setPaymentMethod(e.target.value)} />
             Apple Pay
           </label>
-          <label>
-            <input type="radio" name="payment" value="Credit Card" onChange={(e) => setPaymentMethod(e.target.value)} />
+            <input type="radio"/>
+          </div>
+
+          <div className="label2">
+          <box-icon name='credit-card'></box-icon>
+           <label>
             Tarjeta de Crédito
-          </label>
+           </label>
+            <input type="radio" onClick={mostrando}/>
+          </div>
+
         </div>
 
         <h3>Selecciona una causa bénefica de tu preferencia</h3>
 
-        <label>
-        <input type="radio" name="payment" value="Google Pay"  />
-           Fundación Paniamor
-          </label>
-          <label>
-        <input type="radio" name="payment" value="Google Pay"  />
-          ALCCI
-          </label>
-          <label>
-        <input type="radio" name="payment" value="Google Pay"  />
-        Teletón Costa Rica
-          </label>
-          <label>
-        <input type="radio" name="payment" value="Google Pay"  />
-        Creciendo Juntos
-          </label>
-          
+        <div className="label">
+          <label>Fundación Paniamor</label>
+          <input type="radio"/>
+        </div>
+
+        <div className="label">
+          <label>ALCCI</label>
+          <input type="radio"/>
+        </div>
+
+        <div className="label">
+        <label className='label'>Teletón Costa Rica</label >
+        <input type="radio"/>
+        </div>
+
+        <div className="label">
+        <label className='label'>Rostro De Cristo</label >
+        <input type="radio"/>
+        </div>
+
+        <div className="label">
+          <label className='label'>Creciendo Juntos</label>
+        <input type="radio"/>
+        </div>
           
 
         <div className="personal-info">
           <h3>Detalles del pago</h3>
           <label>
             Nombre:
-            <input type="text" value={name} onChange={(e) => setName(e.target.value)} required />
+            <input type="text" />
           </label>
           <label>
             Dirección:
-            <input type="text" value={address} onChange={(e) => setAddress(e.target.value)} required />
+            <input type="text" />
           </label>
         </div>
 
-        {paymentMethod === 'Credit Card' && (
-          <div className="credit-card-info">
-            <h3>Información de la Tarjeta</h3>
-            <label>
-              Número de tarjeta:
-              <input type="text" value={cardNumber} onChange={(e) => setCardNumber(e.target.value)} required />
-            </label>
-            <label>
-              Fecha de expiración:
-              <input type="text" value={expirationDate} onChange={(e) => setExpirationDate(e.target.value)} required />
-            </label>
-            <label>
-              CVV:
-              <input type="text" value={cvv} onChange={(e) => setCvv(e.target.value)} required />
-            </label>
-          </div>
-        )}
+        {editandoId &&(
+        <div className="personal-info mostrar">
+          <h3>Información de tarjeta</h3>
+          <label>
+            Número de tarjeta:
+            <input type="number" />
+          </label>
+          <label>
+            CVV:
+            <input type="number" />
+          </label>
+          <label>
+            Fecha de vencimiento:
+            <input type="date" />
+          </label>
+        </div>
 
-        <button type="submit" className="submit-btn">Realizar Pago</button>
-      </form>
+        )} 
+       
+
+        <input type="button"  onClick={subir} className="submit-btn" value="Realizar Pago" />
+      </div>
     </div>
   );
 };

@@ -10,7 +10,7 @@ function ProductosAgregadosAdmin() {
   useEffect(() => {
     async function fetchDataProducts() {
       const datos = await llamadosProducts.GetProducts()
-      console.log(datos);
+      
       
       setProductos(datos)
     };

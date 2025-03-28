@@ -35,3 +35,8 @@ h1{
 .Joz{
     border-radius: 320px;
 }
+
+.photos{
+    display: flex;
+    flex-direction: column;
+}

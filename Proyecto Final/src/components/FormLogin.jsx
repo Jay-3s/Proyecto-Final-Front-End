@@ -60,7 +60,8 @@ function FormLogin() {
    console.log("Usuario o contraseña incorrectos");
 
   } else {
-  
+    localStorage.setItem("usuario",JSON.stringify(encontrado.Rol));
+
   if (encontrado.Rol === 'Admin') {
   
     navigate('/Admin');  

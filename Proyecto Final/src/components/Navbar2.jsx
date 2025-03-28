@@ -15,7 +15,7 @@ function Navbar2() {
         <div className='Links'>
             <a href="/Acerca De">Acerca De Nosotros</a>
             <a href="">Ayuda</a>
-            <a href="">Donativos</a>
+            <a href="/Donativos">Donativos</a>
             <a href="">Más Sobre La Marca</a>
             <a href="/Desarrolladores">Desarrolladores</a>
         </div>
