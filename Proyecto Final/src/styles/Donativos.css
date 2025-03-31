@@ -1,4 +1,4 @@
-.info{
+.infor{
     
     height: 80%;
     width: 50%;
@@ -16,14 +16,14 @@ img{
     display: flex; 
 }
 
-.cajon{
+.cajono{
     display: flex;
     margin: auto;
     
 }
 
 h1{
-    background: #ffe0c3;
+    background:#ffe0c3;
     padding: 10px;
 }
 
@@ -32,19 +32,14 @@ h1{
     text-align: left;
 }
 
-.js{
-    border-radius: 320px;
-
-}
-
-.photos{
-    display: flex;
-    flex-direction: column;
-}
-
 .Joz{
-    display: flex;
+    border-radius: 320px;
+}
+
+.photos2{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 50%;
     align-items: center;
-    justify-content: center;
-    
+    margin-left: 80px;
 }

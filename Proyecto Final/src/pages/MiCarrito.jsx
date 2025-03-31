@@ -4,7 +4,9 @@ import Carrito from '../components/Carrito'
 function MiCarrito() {
   return (
     <div>
-        <Carrito/>
+
+      <Carrito/>
+
     </div>
   )
 }

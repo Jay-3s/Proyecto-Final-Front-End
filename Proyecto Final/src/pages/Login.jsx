@@ -5,7 +5,8 @@ import FormLogin from '../components/FormLogin'
 function Login() {
   return (
     <div>
-        <FormLogin />
+
+      <FormLogin />
        
     </div>
   )

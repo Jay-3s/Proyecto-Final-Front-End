@@ -51,6 +51,10 @@ function FormLogin() {
     
   }
 
+  //Al dar click valida a través de una constante creada dentro de la función, 
+  // busca al usuario que sea admin y lo envia a su respectiva página lo añade al local storage como admin 
+  //Si no es posible validar estos datos de administrador redirige la página de clientes regulares con el navigate
+
   function validar() {
 
    const encontrado = usuarios.find(usuario => usuario.nombre === nombreUsuario && usuario.password === passwordUsuario);
@@ -76,6 +80,9 @@ function FormLogin() {
   }
 
   return (
+
+    //Formulario para el inicio de sesión
+
     <div className='fiv'>
 
     <div className='login'>

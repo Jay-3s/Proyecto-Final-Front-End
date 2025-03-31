@@ -1,13 +1,15 @@
 import React, {useState} from 'react'
 import llamadosProducts from '../services/llamadosProducts';
-import '../styles/AgregarProducto.css'
+import '../styles/AgregarProducto.css' //Importaciones
 
 function AgregarProducto() {
 
-    const [ProductoCreado,SetProductoCreada]=useState()
+    const [ProductoCreado,SetProductoCreada]=useState() 
     const [PrecioProducto,SetPrecioProducto]=useState()
     const [StockProducto,SetStockProducto]=useState()
-    const [ImageProducto,setImageProducto]=useState()
+    const [ImageProducto,setImageProducto]=useState()//Seteo
+
+    //Toma el valor del seteo y lo usa para darle el valor al input
 
     function Producto(evento) {
     
@@ -23,6 +25,8 @@ function AgregarProducto() {
     
       SetStockProducto(evento.target.value)  
     }
+
+    //Formato para descomponer en Base64
 
     function Imagen(evento) {
 
@@ -45,19 +49,25 @@ function AgregarProducto() {
 
     }
 
-      function Agregar() {
+    //función para poder poder pstear los productos en el db.json
 
-        console.log(ImageProducto);
+    function Agregar() {
+
+      //console.log(ImageProducto);
         
+      llamadosProducts.PostProducts(ProductoCreado,PrecioProducto,StockProducto,ImageProducto)
         
-          llamadosProducts.PostProducts(ProductoCreado,PrecioProducto,StockProducto,ImageProducto)
      
-      }
+    }
      
   return (
+
+    //contenedores para formularios de agregar producto
     
     <div className='cajota'>
+
         <div className='div'>
+
           <h1 className='KunKun'>Agregar Producto</h1>
           <label>Agregar Nombre Del Producto...</label><br />
           <input type="text"value={ProductoCreado} onChange={Producto}  placeholder='Agrega Un Nombre...'/><br /><br />

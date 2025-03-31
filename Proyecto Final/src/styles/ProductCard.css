@@ -42,6 +42,10 @@
   height: 190px;
 }
 
+.NomProduct {
+  line-height: 20px;
+}
+
 .itemCard:hover {
   transform: scale(1.02);
 }

@@ -2,6 +2,7 @@ import React, { useState,useEffect } from 'react'
 import llamadosProducts from '../services/llamadosProducts';
 import '../styles/AgregarProducto.css'
 
+
 function ProductosAgregadosAdmin() {
 
   const [Productos,setProductos] = useState([])
@@ -9,8 +10,8 @@ function ProductosAgregadosAdmin() {
 
   useEffect(() => {
     async function fetchDataProducts() {
+
       const datos = await llamadosProducts.GetProducts()
-      
       
       setProductos(datos)
     };
@@ -18,11 +19,10 @@ function ProductosAgregadosAdmin() {
   },[])
 
    
-   function eliminar(id) {
+  function eliminar(id) {
   
    llamadosProducts.DeleteProducts(id)
-   location.reload()
-        
+   location.reload()  
         
   }
   
@@ -41,7 +41,7 @@ function ProductosAgregadosAdmin() {
       console.log("Producto actualizado con el nombre:", ProductoEditado);
       location.reload()
 
-        // setEditada(""); 
+      // setEditada(""); 
 
     }  else {
       
@@ -56,6 +56,7 @@ function ProductosAgregadosAdmin() {
     <div className='divdiv'>
        <div>
         <ul className='ul'>
+
           {Productos.map((product,index) => (
 
             <li key={index}>
@@ -71,6 +72,7 @@ function ProductosAgregadosAdmin() {
               <button onClick={e=>eliminar(product.id)} >Eliminar</button>
               
             </li>
+
           ))}
         </ul>
        </div>

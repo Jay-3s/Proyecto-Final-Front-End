@@ -8,15 +8,19 @@ import NavbarAdmin from '../components/NavbarAdmin'
 function Principal() {
   return (  
     <div>
-        <NavbarAdmin />
-        <main className='main'>
-          <Sidebar />
 
-          <ProductosAgregadosClient />
-        </main>
+      <NavbarAdmin />
 
-        {/* <ProductList /> */}
-        <Footer />
+      <main className='main'>
+
+        <Sidebar />
+        <ProductosAgregadosClient />
+
+      </main>
+
+      {/* <ProductList /> */}
+      <Footer />
+
     </div>
   )
 }
